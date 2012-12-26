@@ -59,6 +59,11 @@ PHP_FUNCTION(geoip_isp_by_name);
 PHP_FUNCTION(geoip_db_avail);
 PHP_FUNCTION(geoip_db_get_all_info);
 PHP_FUNCTION(geoip_db_filename);
+PHP_FUNCTION(geoip_asnum_by_name);
+PHP_FUNCTION(geoip_domain_by_name);
+#if LIBGEOIP_VERSION >= 1004008
+PHP_FUNCTION(geoip_netspeedcell_by_name);
+#endif
 #if LIBGEOIP_VERSION >= 1004001
 PHP_FUNCTION(geoip_region_name_by_code);
 PHP_FUNCTION(geoip_time_zone_by_country_and_region);
